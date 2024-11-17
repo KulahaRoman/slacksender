@@ -3,3 +3,10 @@ spring:
     name: messagesender
 server:
   port: 8080
+
+slack:
+  token: ${SLACK_TOKEN}
+  channel:
+    id: ${SLACK_CHANNEL_ID}
+  endpoint:
+    send-message: ${SLACK_ENDPOINT_SEND_MESSAGE}
